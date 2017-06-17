@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My SOS</string>
+    <string name="title">ช่วยเหลือฉุกเฉิน</string>
+    <string name="login">Login</string>
+</resources>
