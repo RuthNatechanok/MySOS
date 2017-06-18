@@ -29,6 +29,7 @@ public class NewRegisterActivity extends AppCompatActivity {
          //NewRegister Controler
         newRegisterController();
 
+
     }
 
     private void newRegisterController() {
