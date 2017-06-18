@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">My SOS</string>
-    <string name="title">ช่วยเหลือฉุกเฉิน</string>
+    <string name="title">แอพช่วยเหลือฉุกเฉิน</string>
     <string name="login">Login</string>
     <string name="user">User</string>
     <string name="password">password</string>
+    <string name="new_register">New Register</string>
+    <string name="name">Your Name</string>
 </resources>
