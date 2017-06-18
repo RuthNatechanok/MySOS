@@ -35,6 +35,7 @@
     </RelativeLayout>
 
     <ScrollView
+        android:background="@color/colorPrimaryLight"
         android:layout_above="@+id/btnNewRegister"
         android:layout_below="@+id/relTop"
         android:layout_width="match_parent"
@@ -43,6 +44,7 @@
 
 
         <LinearLayout
+            android:background="#78f2f2f2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
