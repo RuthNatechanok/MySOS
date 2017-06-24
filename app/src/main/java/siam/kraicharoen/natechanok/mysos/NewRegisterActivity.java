@@ -2,6 +2,7 @@ package siam.kraicharoen.natechanok.mysos;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -49,9 +50,29 @@ public class NewRegisterActivity extends AppCompatActivity {
                     myAlert.myDialog("Have Space","กรุณากรอกข้อมูลให้ครบ");
                 } else {
                      //no space
+                    uploadValueToServer();
                 }
             }
         });
+    }
+
+    private void uploadValueToServer() {
+        try {
+            PostDataToServer postDataToServer = new PostDataToServer(NewRegisterActivity.this);
+            postDataToServer.execute(nameString, userString, passString, "http://androidthai.in.th/siam/addDataRuth.php");
+            if (Boolean.parseBoolean(postDataToServer.get())) {
+                finish();
+            } else {
+                MyAlert myAlert = new MyAlert(NewRegisterActivity.this);
+                myAlert.myDialog("cannot Upload","Please Try Again");
+            }
+
+
+
+        } catch (Exception e) {
+            Log.d("SiamV1", "e upload ==>" + e.toString());
+        }
+
     }
 
     private void backController() {
